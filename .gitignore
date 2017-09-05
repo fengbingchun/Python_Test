@@ -2,5 +2,10 @@
 *.pyc
 *.pkl
 *.txt
+/lib/
+/obj/
+*.sdf
+*.suo
+*.opensdf
 
 
