@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+#import matplotlib.image as mpimg
 
 # 函数代码块以def关键词开头，后接函数标识符号和圆括号()
 def f(t):
@@ -27,4 +28,6 @@ plt.ylabel('y some numbers')
 plt.text(2, 0.25, r'$\mu=100,\ \sigma=15$')
 plt.grid(True)
 
+plt.figure(2)
+#img = mpimg.imread('E:/GitCode/Python_Test/test_data/lena.png')
 plt.show()
