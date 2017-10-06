@@ -7,5 +7,5 @@
 *.sdf
 *.suo
 *.opensdf
-
+/test_data/
 
