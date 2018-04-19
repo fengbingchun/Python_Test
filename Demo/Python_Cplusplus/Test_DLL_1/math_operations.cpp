@@ -1,8 +1,6 @@
 #include "math_operations.hpp"
 #include <iostream>
 
-//namespace fbc {
-
 FBC_EXPORTS int add_(int a, int b)
 {
 	fprintf(stdout, "add operation\n");
@@ -31,4 +29,3 @@ FBC_EXPORTS int div_(int a, int b)
 	return (a / b);
 }
 
-//}
