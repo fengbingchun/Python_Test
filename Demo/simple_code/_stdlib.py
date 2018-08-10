@@ -1,6 +1,3 @@
-# 标准库测试代码
-# reference：http://www.runoob.com/python3/python3-stdlib.html
-
 import os
 #import glob
 import sys
@@ -12,8 +9,13 @@ from datetime import date
 import zlib
 from timeit import Timer
 
+'''
+标准库测试代码
+reference：http://www.runoob.com/python3/python3-stdlib.html
+'''
+
 # 1. os
-print(os.getcwd()) # 返回当前的工作目录
+print(os.getcwd()) # 输出当前目录
 print(dir(os)) # returns a list of all module functions
 
 # 2. glob

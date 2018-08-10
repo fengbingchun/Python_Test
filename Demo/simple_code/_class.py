@@ -1,27 +1,33 @@
-# 面向对象(class)测试代码
-# reference: http://www.runoob.com/python3/python3-class.html
+'''
+面向对象(class)测试代码
+reference: http://www.runoob.com/python3/python3-class.html
+'''
 
 # 1.
 class MyClass:
     """一个简单的类实例"""
     i = 12345
 
+    # 类的方法与普通的函数只有一个特别的区别:它们必须有一个额外的第一个参数名称,按照惯例它的名称是self
     def f(self):
         return 'hello world'
 
 x = MyClass() # 实例化类
 # 访问类的属性和方法
-print("MyClass 类的属性 i 为：", x.i)
-print("MyClass 类的方法 f 输出为：", x.f())
+print("MyClass类的属性i为:", x.i)
+print("MyClass类的方法f输出为:", x.f())
+print()
 
 # 2.
 class Complex:
+    # 类可能会定义一个名为__init__()的特殊方法(构造方法).类定义了__init__()方法的话，类的实例化操作会自动调用__init__()方法
     def __init__(self, realpart, imagpart):
         self.r = realpart
         self.i = imagpart
 
 x = Complex(3.0, -4.5)
 print(x.r, x.i)   # 输出结果：3.0 -4.5
+print()
 
 # 3.
 class Test:
@@ -31,13 +37,14 @@ class Test:
 
 t = Test()
 t.prt()
+print()
 
 # 4.
 class people:
     # 定义基本属性
     name = ''
     age = 0
-    # 定义私有属性,私有属性在类外部无法直接进行访问
+    # 两个下划线开头，声明该属性为私有,在类外部无法直接进行访问,在类内部方法中使用时用self.***
     __weight = 0
 
     # 定义构造方法
@@ -47,24 +54,26 @@ class people:
         self.__weight = w
 
     def speak(self):
-        print("%s 说: 我 %d 岁。" % (self.name, self.age))
+        print("%s说: 我%d岁." % (self.name, self.age))
 
 p = people('runoob', 10, 30)
 p.speak()
+print()
 
 # 5. 单继承
 class student(people):
     grade = ''
-    def __init__(self,n,a,w,g):
-        #调用父类的构函
-        people.__init__(self,n,a,w)
+    def __init__(self, n, a, w, g):
+        # 调用父类的构造函数
+        people.__init__(self, n, a, w)
         self.grade = g
     #覆写父类的方法
     def speak(self):
-        print("%s 说: 我 %d 岁了，我在读 %d 年级"%(self.name,self.age,self.grade))
+        print("%s说:我%d岁了,我在读%d年级"%(self.name, self.age, self.grade))
 
-s = student('ken',10,60,3)
+s = student('ken', 10, 60, 3)
 s.speak()
+print()
 
 # 6. 多继承
 class speaker():
@@ -76,7 +85,7 @@ class speaker():
         self.topic = t
 
     def speak(self):
-        print("我叫 %s，我是一个演说家，我演讲的主题是 %s" % (self.name, self.topic))
+        print("我叫%s,我是一个演说家,我演讲的主题是%s" % (self.name, self.topic))
 
 class sample(speaker, student):
     a = ''
@@ -87,6 +96,7 @@ class sample(speaker, student):
 
 test = sample("Tim", 25, 80, 4, "Python")
 test.speak()  # 方法名同，默认调用的是在括号中排前地父类的方法
+print()
 
 # 7. 方法重写
 class Parent:  # 定义父类
@@ -115,6 +125,7 @@ counter.count()
 counter.count()
 print(counter.publicCount)
 #print(counter.__secretCount)  # 报错，实例不能访问私有变量
+print()
 
 # 9. 类的私有方法
 class Site:
@@ -123,8 +134,8 @@ class Site:
         self.__url = url  # private
 
     def who(self):
-        print('name  : ', self.name)
-        print('url : ', self.__url)
+        print('name:', self.name)
+        print('url:', self.__url)
 
     def __foo(self):  # 私有方法
         print('这是私有方法')
@@ -137,6 +148,7 @@ x = Site('菜鸟教程', 'www.runoob.com')
 x.who()  # 正常输出
 x.foo()  # 正常输出
 #x.__foo()  # 报错
+print()
 
 # 10. 运算符重载
 class Vector:
@@ -145,7 +157,7 @@ class Vector:
         self.b = b
 
     def __str__(self):
-        return 'Vector (%d, %d)' % (self.a, self.b)
+        return 'Vector(%d, %d)' % (self.a, self.b)
 
     def __add__(self, other):
         return Vector(self.a + other.a, self.b + other.b)

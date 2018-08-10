@@ -1,5 +1,7 @@
-# 数据结构测试代码
-# reference: http://www.runoob.com/python3/python3-data-structure.html
+'''
+数据结构测试代码
+reference: http://www.runoob.com/python3/python3-data-structure.html
+'''
 
 # 1. Python中列表的方法
 a = [66.25, 333, 333, 1, 1234.5]
@@ -11,6 +13,7 @@ a.remove(333); print("remove:", a)
 a.reverse(); print("reverse:", a)
 a.sort(); print("sort:", a)
 print("pop:", a.pop())
+print()
 
 # 2. 列表推导式
 vec = [2, 4, 6]
@@ -23,6 +26,7 @@ vec2 = [4, 3, -9]
 print([x*y for x in vec1 for y in vec2])
 print([x+y for x in vec1 for y in vec2])
 print([vec1[i]*vec2[i] for i in range(len(vec1))])
+print()
 
 # 3. 嵌套列表解析
 matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12],]
@@ -41,12 +45,14 @@ for i in range(4):
         transposed_row.append(row[i])
     transposed.append(transposed_row)
 print(transposed)
+print()
 
 # 4. del语句
 a = [-1, 1, 66.25, 333, 333, 1234.5]
 del a[0]; print(a)
 del a[2:4]; print(a)
 del a[:]; print(a)
+print()
 
 # 5. 元组
 t = 12345, 54321, 'hello!'
@@ -54,8 +60,9 @@ print(t[0])
 print(t)
 u = t, (1, 2, 3, 4, 5)
 print(u)
+print()
 
-# 6. 集合
+# 6. 集合:是一个无序不重复元素的序列
 basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 print(basket)
 print('orange' in basket)
@@ -71,6 +78,7 @@ print(a ^ b)
 
 a = {x for x in 'abracadabra' if x not in 'abc'}
 print(a)
+print()
 
 # 7. 字典
 tel = {'jack': 4098, 'sape': 4139}
@@ -91,6 +99,7 @@ print(dict([('sape', 4139), ('guido', 4127), ('jack', 4098)]))
 print({x: x**2 for x in (2, 4, 6)})
 
 print(dict(sape=4139, guido=4127, jack=4098))
+print()
 
 # 8. 遍历技巧
 knights = {'gallahad': 'the pure', 'robin': 'the brave'}
@@ -106,9 +115,11 @@ for q, a in zip(questions, answers):
     print('What is your {0}?  It is {1}.'.format(q, a))
 
 for i in reversed(range(1, 10, 2)):
-    print(i)
+    print(i, end=",")
+print()
 
 basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
 for f in sorted(set(basket)):
-    print(f)
+    print(f, end=",")
+print()
 
