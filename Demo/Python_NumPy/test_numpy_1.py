@@ -1,5 +1,15 @@
 import numpy as np
 from matplotlib import pyplot as plt
+import os
+
+'''
+numpy使用测试代码
+'''
+os_name=os.name
+if os_name == "posix": # linux
+	print("python running on linux")
+else: # nt: windows
+	print("python running on windows")
 
 # 一维
 a = np.array([1, 2, 3]); print(a) # [1 2 3]
@@ -8,9 +18,9 @@ b = np.arange(10); print(b) # [0 1 2 3 4 5 6 7 8 9]
 
 # 二维
 c = np.array([[1, 2], [3, 4]]); print(c) # [[1 2]
-										 #  [3 4]]
+					 #  [3 4]]
 # ndmin指定返回数组的最小维数
-d = np.array([1, 2, 3, 4, 5]); print(d) 		 # [1 2 3 4 5]
+d = np.array([1, 2, 3, 4, 5]); print(d)  # [1 2 3 4 5]
 e = np.array([1, 2, 3, 4, 5], ndmin=2); print(e) # [[1 2 3 4 5]]
 
 # dtype:数组的所需数据类型
@@ -23,14 +33,13 @@ dt = np.dtype('i8'); print(dt) # int64
 
 # 调整数组shape
 a = np.array([[1, 2, 3], [4, 5, 6]]); print(a); # [[1 2 3]
-												#  [4 5 6]]
+						#  [4 5 6]]
 a.shape = (3, 2); print(a)                      # [[1 2]
-												#  [3 4]
-												#  [5 6]]
+						#  [3 4]
+						#  [5 6]]
 a = np.array([[1, 2, 3], [4, 5, 6]]); b = a.reshape(3, 2); print(b) # [[1 2]
-												                    #  [3 4]
-												                    #  [5 6]]
-
+								    #  [3 4]
+								    #  [5 6]]
 # ndim:返回数组的维数
 a = np.arange(24); print(a.ndim) # 1
 # numpy.reshape: 在不改变数据的条件下修改形状
@@ -47,7 +56,7 @@ x = np.empty([3, 2], dtype='i1'); print(x) # 数组x的元素为随机值，因�
 x = np.zeros(5, dtype=np.int); print(x) # [0 0 0 0 0]
 # 含有6个1的二维数组，若不指定类型，则默认为float
 x = np.ones([2, 3], dtype=int); print(x) # [[1 1 1]
-										 #  [1 1 1]]
+				         #  [1 1 1]]
 
 # 将列表转换为ndarray
 x = [1, 2, 3]
@@ -191,12 +200,20 @@ print(a); # [[0 1 2]
 # load()和save()函数处理NumPy二进制文件(带npy扩展名)
 # loadtxt()和savetxt()函数处理正常的文本文件
 a = np.array([1, 2, 3, 4, 5])
-np.save('E:/GitCode/Python_Test/test_data/outfile.npy', a)
-b = np.load('E:/GitCode/Python_Test/test_data/outfile.npy')
+if os_name == "posix":
+	np.save('../../test_data/outfile.npy', a)
+	b = np.load('../../test_data/outfile.npy')
+else:
+	np.save('E:/GitCode/Python_Test/test_data/outfile.npy', a)
+	b = np.load('E:/GitCode/Python_Test/test_data/outfile.npy')
 print(b) # [1 2 3 4 5]
 
-np.savetxt('E:/GitCode/Python_Test/test_data/outfile.txt', a)
-b = np.loadtxt('E:/GitCode/Python_Test/test_data/outfile.txt')
+if os_name == "posix":
+	np.savetxt('../../test_data/outfile.txt', a)
+	b = np.loadtxt('../../test_data/outfile.txt')
+else:
+	np.savetxt('E:/GitCode/Python_Test/test_data/outfile.txt', a)
+	b = np.loadtxt('E:/GitCode/Python_Test/test_data/outfile.txt')
 print(b) # [1. 2. 3. 4. 5.]
 
 # Matplotlib是Python的绘图库，在http://matplotlib.org/examples/ 中含有大量的matplotlib使用用例
@@ -207,63 +224,4 @@ plt.xlabel("x axis caption")
 plt.ylabel("y axis caption")
 plt.plot(x,y, 'ob')
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

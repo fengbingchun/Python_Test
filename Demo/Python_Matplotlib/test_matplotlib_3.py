@@ -1,6 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
-#import matplotlib.image as mpimg
+import matplotlib.image as mpimg
+import os
+
+os_name=os.name
+if os_name == "posix": # linux
+	print("python running on linux")
+else: # nt: windows
+	print("python running on windows")
 
 # 函数代码块以def关键词开头，后接函数标识符号和圆括号()
 def f(t):
@@ -29,5 +36,8 @@ plt.text(2, 0.25, r'$\mu=100,\ \sigma=15$')
 plt.grid(True)
 
 plt.figure(2)
-#img = mpimg.imread('E:/GitCode/Python_Test/test_data/lena.png')
+if os_name == "posix":
+	img = mpimg.imread('../../test_data/lena.png')
+else:
+	img = mpimg.imread('E:/GitCode/Python_Test/test_data/lena.png')
 plt.show()

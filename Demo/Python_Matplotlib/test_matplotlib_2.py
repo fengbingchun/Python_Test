@@ -62,7 +62,7 @@ for x,y in zip(X,Y1):
 ylim(-1.25,+1.25)
 
 # 以分辨率72来保存图像
-savefig("./../../test_matplotlib_1.png", dpi=72)
+savefig("./../../test_data/test_matplotlib_1.png", dpi=72)
 
 # 在屏幕上显示
 show()
