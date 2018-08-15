@@ -1,7 +1,17 @@
 # blog: https://blog.csdn.net/fengbingchun/article/details/80001768
 import ctypes
+import os
 
-lib = ctypes.cdll.LoadLibrary("E:/GitCode/Python_Test/lib/rel/x64_vc12/Test_DLL_1.dll")
+os_name=os.name
+if os_name == "posix": # linux
+	print("python running on linux")
+else: # nt: windows
+	print("python running on windows")
+
+if os_name == "posix":
+	lib = ctypes.cdll.LoadLibrary("build/libTest_DLL_1.so")
+else:
+	lib = ctypes.cdll.LoadLibrary("E:/GitCode/Python_Test/lib/rel/x64_vc12/Test_DLL_1.dll")
 
 a = 9; b = 3
 

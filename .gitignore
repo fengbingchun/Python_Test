@@ -8,4 +8,6 @@
 *.suo
 *.opensdf
 /test_data/
-
+*.png
+/prj/linux_cmake_Python_Cplusplus/build/
+/prj/linux_cmake_Python_Cplusplus/*.py

@@ -1,7 +1,11 @@
 #ifndef TEST_DLL_1_MATH_OPERATIONS_HPP_
 #define TEST_DLL_1_MATH_OPERATIONS_HPP_
 
-#define FBC_EXPORTS __declspec(dllexport)
+#ifdef __linux__
+	#define FBC_EXPORTS __attribute__((visibility("default")))
+#else
+	#define FBC_EXPORTS __declspec(dllexport)
+#endif
 
 #ifdef __cplusplus
 extern "C" {
