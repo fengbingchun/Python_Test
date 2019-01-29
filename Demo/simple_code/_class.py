@@ -3,8 +3,9 @@
 reference: http://www.runoob.com/python3/python3-class.html
 '''
 
-# 1.
-class MyClass:
+# 1. 关键字class后面跟着类名,类名通常是大写字母开头的单词,紧接着是(object)，表示该类是从哪个类继承下来的.
+# 通常,如果没有合适的继承类, 就使用object类，这是所有类最终都会继承下来的类
+class MyClass(object):
     """一个简单的类实例"""
     i = 12345
 
@@ -19,7 +20,7 @@ print("MyClass类的方法f输出为:", x.f())
 print()
 
 # 2.
-class Complex:
+class Complex(object):
     # 类可能会定义一个名为__init__()的特殊方法(构造方法).类定义了__init__()方法的话，类的实例化操作会自动调用__init__()方法
     def __init__(self, realpart, imagpart):
         self.r = realpart

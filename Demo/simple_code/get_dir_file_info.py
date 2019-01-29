@@ -2,7 +2,7 @@ import os
 import sys
 import hashlib
 
-// Blog: https://blog.csdn.net/fengbingchun/article/details/86665247
+# Blog: https://blog.csdn.net/fengbingchun/article/details/86665247
 
 def Usage():
     ''' usage description '''
