@@ -6,6 +6,7 @@
 - Python3 call NumPy test code
 - Python3 call OpenCV test code
 - Python3 call SicPy test code
+- Python3 send email test code(smtplib, email)
 
 **This project supports both linux and windows10/7 platforms.**
 
