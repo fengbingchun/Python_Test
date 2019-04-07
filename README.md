@@ -7,6 +7,7 @@
 - Python3 call OpenCV test code
 - Python3 call SicPy test code
 - Python3 send email test code(smtplib, email)
+- Python3 call PyMongo test code
 
 **This project supports both linux and windows10/7 platforms.**
 
