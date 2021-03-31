@@ -20,7 +20,7 @@ print("a // b =", a//b)
 print()
 
 # 2. 比较运算符：==、!=、>、<、>=、<=
-a = 4; b =2;
+a = 4; b =2
 if (a == b):
     print("a == b")
 else:
@@ -28,7 +28,7 @@ else:
 print()
 
 # 3. 赋值运算符： =、+=、-=、*=、/=、%=、**=、//=
-a = 10; b = 3;
+a = 10; b = 3
 a+=b
 print("a+=b:", a)
 print()
@@ -53,7 +53,7 @@ print()
 
 # 6. 成员运算符：in(如果在指定的序列中找到值返回True，否则返回False)、not in
 a = 10; b = 20
-list = [1, 2, 3, 4, 5 ];
+list = [1, 2, 3, 4, 5 ]
 if (a in list):
    print ("变量a在给定的列表中list中")
 else:

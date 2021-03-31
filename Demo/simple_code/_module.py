@@ -32,9 +32,13 @@ print()
 if __name__ == '__main__':
    print('程序自身在运行')
 else:
-   print('我来自另一模块')
+   print('我来自另一模块:', __name__)
 print()
 
-# 6. dir()函数
-print("sys:", dir(_tmp1))
-print("sys:", dir(sys))
+# 6. dir()函数: dir函数不带参数时，返回当前范围内的变量、方法和定义的类型列表；带参数时，返回参数的属性、方法列表
+print("#### sys1:", dir()) # 获取当前模块的属性列表
+print("#### sys2:", dir([])) # 查看列表的方法
+print("#### sys3:", dir(()))
+print("#### sys4:", dir({}))
+print("#### sys5:", dir(_tmp1))
+print("#### sys6:", dir(sys))

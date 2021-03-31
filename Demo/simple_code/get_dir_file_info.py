@@ -67,7 +67,7 @@ def WriteToFile(contents):
 def ReplaceStr(src_str, new_str):
     ''' replace source string with new string '''
     contents = list()
-    
+
     fp = open(sys.argv[2], "r")
     line = fp.readline()
     while line:

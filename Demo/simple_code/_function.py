@@ -27,53 +27,53 @@ print()
 # 3. 传可变对象
 def changeme(mylist):
     "修改传入的列表"
-    mylist.append([1, 2, 3, 4]);
+    mylist.append([1, 2, 3, 4])
     print("函数内取值:", mylist)
     return
 
-mylist = [10, 20, 30];
-changeme(mylist);
+mylist = [10, 20, 30]
+changeme(mylist)
 print("函数外取值:", mylist)
 print()
 
 # 4. 关键字参数
 def printinfo(name, age):
     "打印任何传入的字符串"
-    print("名字:", name);
-    print("年龄:", age);
-    return;
+    print("名字:", name)
+    print("年龄:", age)
+    return
 
-printinfo(age=50, name="runoob");
+printinfo(age=50, name="runoob")
 print()
 
 # 5. 默认参数
-def printinfo(name, age=35):
+def printinfo2(name, age=35):
     "打印任何传入的字符串"
-    print("名字:", name);
-    print("年龄:", age);
-    return;
+    print("名字:", name)
+    print("年龄:", age)
+    return
 
-printinfo(age=50, name="runoob");
+printinfo2(age=50, name="runoob")
 print("------------------------")
-printinfo(name="runoob");
+printinfo2(name="runoob")
 print()
 
 # 6. 不定长参数
-def printinfo(arg1, *vartuple):
+def printinfo3(arg1, *vartuple):
     "打印任何传入的参数"
     print("输出:", end=" ")
     print(arg1, end=" ")
     for var in vartuple:
         print(var, end=" ")
     print()
-    return;
+    return
 
-printinfo(10);
-printinfo(70, 60, 50);
+printinfo3(10)
+printinfo3(70, 60, 50)
 print()
 
 # 7. 匿名函数
-sum = lambda arg1, arg2: arg1 + arg2;
+sum = lambda arg1, arg2: arg1 + arg2
 
 # 调用sum函数
 print("相加后的值为:", sum(10, 20))
@@ -81,26 +81,26 @@ print("相加后的值为:", sum(20, 20))
 print()
 
 # 8. return 语句
-def sum(arg1, arg2):
-   # 返回2个参数的和."
+def sum2(arg1, arg2):
+   # 返回2个参数的和
    total = arg1 + arg2
    print ("函数内:", total)
-   return total;
+   return total
 
 # 调用sum函数
-total = sum(10, 20);
+total = sum2(10, 20)
 print ("函数外:", total)
 print()
 
 # 9. 变量作用域
-total = 0; # 这是一个全局变量
-def sum(arg1, arg2):
-    #返回2个参数的和."
-    total = arg1 + arg2; # total在这里是局部变量
+total = 0 # 这是一个全局变量
+def sum3(arg1, arg2):
+    #返回2个参数的和
+    total = arg1 + arg2 # total在这里是局部变量
     print ("函数内是局部变量:", total)
-    return total;
+    return total
 
-sum(10, 20);
+sum3(10, 20)
 print ("函数外是全局变量:", total)
 print()
 

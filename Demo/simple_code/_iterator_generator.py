@@ -41,5 +41,6 @@ while True:
     try:
         print(next(f), end=" ")
     except StopIteration:
+        print("\nStopIteration, exit")
         sys.exit()
 print()

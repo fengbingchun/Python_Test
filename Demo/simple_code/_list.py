@@ -4,8 +4,8 @@ reference: http://www.runoob.com/python3/python3-list.html
 '''
 
 # 1. 访问列表中的值：使用下标索引来访问列表中的值，同样也可以使用方括号的形式截取字符
-list1 = ['Google', 'Runoob', 1997, 2000];
-list2 = [1, 2, 3, 4, 5, 6, 7 ];
+list1 = ['Google', 'Runoob', 1997, 2000]
+list2 = [1, 2, 3, 4, 5, 6, 7 ]
 print ("list1[0]:", list1[0])
 print ("list2[1:5]:", list2[1:5])
 print("\n")
@@ -29,7 +29,7 @@ list1 = [1, 2, 3]; list2 = [4, 5, 6]
 list3 = list1 + list2
 print("list3:", list3)
 
-list4 = list1 * 4;
+list4 = list1 * 4
 print("list4:", list4)
 print("\n")
 
