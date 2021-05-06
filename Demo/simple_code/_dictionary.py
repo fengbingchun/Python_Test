@@ -1,4 +1,4 @@
-'''
+﻿'''
 字典测试代码
 reference: http://www.runoob.com/python3/python3-dictionary.html
 '''

@@ -1,4 +1,4 @@
-import _thread # thread模块已被废弃. 用户可以使用threading模块代替. 所以,在Python3中不能再使用"thread"模块. 为了兼容性,Python3将thread重命名为"_thread"
+﻿import _thread # thread模块已被废弃. 用户可以使用threading模块代替. 所以,在Python3中不能再使用"thread"模块. 为了兼容性,Python3将thread重命名为"_thread"
 import threading
 import time
 

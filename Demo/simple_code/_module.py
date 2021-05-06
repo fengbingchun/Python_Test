@@ -1,4 +1,4 @@
-import sys # 导入python标准库中的sys.py模块
+﻿import sys # 导入python标准库中的sys.py模块
 import _tmp1 # 导入当前目录下的_tmp1.py
 from _tmp2 import fib, fib2 # 导入当前目录下的_tmp2.py中的fib、fib2函数,这个声明不会把整个_tmp2模块导入到当前的命名空间中,它只会将_tmp2里的fib、fi2函数引入进来
 #from _tmp2 import * # 把一个模块的所有内容全都导入到当前的命名空间

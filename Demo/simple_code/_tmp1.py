@@ -1,4 +1,4 @@
-# _module.py中会使用此文件
+﻿# _module.py中会使用此文件
 
 if __name__ == '__main__':
    print('程序自身在运行')

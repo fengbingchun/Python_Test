@@ -1,4 +1,4 @@
-'''
+﻿'''
 错误和异常测试代码
 reference： http://www.runoob.com/python3/python3-errors-execptions.html
 '''

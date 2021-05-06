@@ -1,4 +1,4 @@
-# 导入matplotlib的所有内容
+﻿# 导入matplotlib的所有内容
 from pylab import *
 
 # 创建一个8*6点的图，并设置分辨率为80

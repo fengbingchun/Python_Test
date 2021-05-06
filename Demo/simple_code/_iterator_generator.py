@@ -1,4 +1,4 @@
-import sys # 引入sys模块
+﻿import sys # 引入sys模块
 
 '''
 迭代器与生成器测试代码
