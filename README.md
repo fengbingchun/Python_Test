@@ -9,6 +9,7 @@
 - Python3 send email test code(smtplib, email)
 - Python3 call PyMongo test code
 - Python3 rpc(remote procedure call) test code
+- Python3 call Pillow(PIL) test code
 
 **This project supports both linux and windows10/7 platforms.**
 
