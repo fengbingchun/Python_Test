@@ -11,3 +11,5 @@
 *.png
 /prj/linux_cmake_Python_Cplusplus/build/
 /prj/linux_cmake_Python_Cplusplus/*.py
+.vscode
+demo/pybind11/*.so

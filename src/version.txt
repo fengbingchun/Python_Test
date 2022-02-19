@@ -1,0 +1,5 @@
+1. pybind11:
+	commit: ffa3468
+	version: 2.9.1
+	date: 2022.02.03
+	url: https://github.com/pybind/pybind11/releases/tag/v2.9.1
