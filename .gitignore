@@ -13,3 +13,4 @@
 /prj/linux_cmake_Python_Cplusplus/*.py
 .vscode
 demo/pybind11/*.so
+demo/simple_code/*.pickle
