@@ -11,6 +11,7 @@
 - Python3 rpc(remote procedure call) test code
 - Python3 call Pillow(PIL) test code
 - pybind11's usage
+- Python3 wheel's create and usage
 
 **This project supports both linux and windows10/7 platforms.**
 
