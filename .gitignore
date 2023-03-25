@@ -17,3 +17,6 @@ demo/simple_code/*.pickle
 demo/wheel/build/
 demo/wheel/dist/
 demo/wheel/testwheel.egg-info/
+demo/pyd/build/
+demo/pyd/addr.c
+demo/pyd/addr.cp38-win_amd64.pyd

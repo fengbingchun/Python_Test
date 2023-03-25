@@ -13,6 +13,15 @@
 - pybind11's usage
 - Python3 wheel's create and usage
 
+**Installation:**
+```
+conda create -n Python_Test python=3.8
+conda activate Python_Test
+git clone https://github.com/fengbingchun/Python_Test
+cd Python_Test
+pip install -r requirements.txt
+```
+
 **This project supports both linux and windows10/7 platforms.**
 
 **Blog:** [fengbingchun](http://blog.csdn.net/fengbingchun/article/category/1244795)

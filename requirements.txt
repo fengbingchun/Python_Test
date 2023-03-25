@@ -1,2 +1,6 @@
+matplotlib
+pymongo
+scipy
 imageio
 opencv-python
+Cython
