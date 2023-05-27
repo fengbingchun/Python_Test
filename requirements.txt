@@ -4,3 +4,4 @@ scipy
 imageio
 opencv-python
 Cython
+pyquaternion
