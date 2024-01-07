@@ -5,3 +5,4 @@ imageio
 opencv-python
 Cython
 pyquaternion
+cryptography

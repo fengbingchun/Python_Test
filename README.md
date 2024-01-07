@@ -1,17 +1,18 @@
 # Python_Test
 **The main role of the project: Python3's usage:**
 - Python3 basic test code
-- Python3 call dynamic library test code(ctypes, C interface)
-- Python3 call Matplotlib test code
-- Python3 call NumPy test code
-- Python3 call OpenCV test code
-- Python3 call SicPy test code
-- Python3 send email test code(smtplib, email)
-- Python3 call PyMongo test code
-- Python3 rpc(remote procedure call) test code
-- Python3 call Pillow(PIL) test code
+- call dynamic library test code(ctypes, C interface)
+- Matplotlib's usage
+- NumPy's usage
+- OpenCV's usage
+- SicPy's usage
+- send email test code(smtplib, email)
+- PyMongo's usage
+- rpc(remote procedure call) test code
+- Pillow(PIL)'s usage
 - pybind11's usage
-- Python3 wheel's create and usage
+- wheel's create and usage
+- cryptography's usage
 
 **Installation:**
 ```
