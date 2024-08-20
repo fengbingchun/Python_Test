@@ -16,7 +16,7 @@
 
 **Installation:**
 ```
-conda create -n Python_Test python=3.8
+conda create -n Python_Test python=3.10
 conda activate Python_Test
 git clone https://github.com/fengbingchun/Python_Test
 cd Python_Test

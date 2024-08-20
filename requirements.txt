@@ -6,3 +6,4 @@ opencv-python
 Cython
 pyquaternion
 cryptography
+colorama
