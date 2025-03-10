@@ -55,7 +55,7 @@ def solve_inequalities():
     samplesz = np.linspace(bounds[2][1], bounds[2][1], num=num, endpoint=False, dtype=float)
 
     cons = [
-        {"type": "ineq", "fun": partial(constraint, a=a1, b=b1, c=c1, value=6, inequality_type="eq")},
+        {"type": "eq", "fun": partial(constraint, a=a1, b=b1, c=c1, value=6, inequality_type="eq")},
         {"type": "ineq", "fun": partial(constraint, a=a2, b=b2, c=c2, value=6200, inequality_type="lower")},
         {"type": "ineq", "fun": partial(constraint, a=a2, b=b2, c=c2, value=6230, inequality_type="upper")},
         {"type": "ineq", "fun": partial(constraint, a=a3, b=b3, c=c3, value=9.9, inequality_type="lower")},
