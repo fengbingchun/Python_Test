@@ -14,6 +14,7 @@
 - wheel's create and usage
 - cryptography's usage
 - Pyomo's usage
+- FastAPI's usage
 
 **Installation:**
 ```
