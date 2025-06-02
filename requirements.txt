@@ -9,3 +9,4 @@ cryptography
 colorama
 pyomo
 fastapi[standard]
+requests
