@@ -21,3 +21,5 @@ demo/pyd/build/
 demo/pyd/addr.c
 demo/pyd/addr.cp38-win_amd64.pyd
 demo/results.yml
+demo/log
+demo/test/__pycache__

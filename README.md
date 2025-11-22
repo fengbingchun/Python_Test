@@ -15,6 +15,7 @@
 - cryptography's usage
 - Pyomo's usage
 - FastAPI's usage
+- logging's usage
 
 **Installation:**
 ```
@@ -24,7 +25,7 @@ git clone https://github.com/fengbingchun/Python_Test
 cd Python_Test
 pip install -r requirements.txt
 ```
-- 从https://sourceforge.net/projects/winglpk/ 下载winglpk-4.65.zip并解压缩，将glpk-4.65\w64目录添加到系统环境变量中
+- Download winglpk-4.65.zip from https://sourceforge.net/projects/winglpk/ and extract it. Add the glpk-4.65\w64 directory to your system environment variables.
 
 **This project supports both linux and windows10/7 platforms.**
 
